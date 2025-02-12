@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criminal Detection System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <div class="logo-container">
+                <img src="{{ url_for('static', filename='images/logo3.png') }}" alt="Logo" class="logo">
+            </div>
+            <h1>Criminal Detection System</h1>
+        </header>
+
+        <!-- Upload Section -->
+        <div class="upload-section">
+            <h2>Upload an Image or Video for Prediction</h2>
+            <form action="/predict_image" method="POST" enctype="multipart/form-data">
+                <label for="image">Image:</label>
+                <input type="file" name="image" accept="image/*">
+                <button type="submit">Upload Image</button>
+            </form>
+
+            <form action="/predict_video" method="POST" enctype="multipart/form-data">
+                <label for="video">Video:</label>
+                <input type="file" name="video" accept="video/*">
+                <button type="submit">Upload Video</button>
+            </form>
+
+            <h2>Open Camera for Real-Time Detection</h2>
+            <a href="/predict_camera" target="_blank">
+                <button type="button">Start Camera</button>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criminal Detection Result</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <div class="container2">
+        <header>
+            <h1>Criminal Detection Result</h1>
+        </header>
+
+        <div class="result-section">
+            <h2>Uploaded Image</h2>
+            <div class="image-container">
+                <img src="{{ image_path }}" alt="Uploaded Image">
+            </div>
+            
+            <h2>Prediction Results</h2>
+            <div class="prediction">
+                <ul>
+                    {% for result in results %}
+                        <li>{{ result }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+
+            <div class="back-button">
+                <a href="/">Go back to upload another image/video</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

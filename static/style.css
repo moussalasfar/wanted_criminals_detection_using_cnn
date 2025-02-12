@@ -1,0 +1,163 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Slab', serif;
+    background-image: url('/static/images/background.jpg'); /* Image de fond */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 20px;
+}
+
+/* Container for content */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.6); /* Fond semi-transparent */
+    padding: 30px;
+    border-radius: 20px; /* Bordures arrondies */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+
+/* Header styling */
+header {
+    position: relative; /* To allow absolute positioning of the logo */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 3em;
+    font-weight: bold;
+    color: #ffcc00; /* Couleur dorée */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Logo styling */
+.logo-container {
+    position: absolute; /* To position logo in the top-left corner */
+    top: 0px;
+    left: 0px;
+}
+
+.logo {
+    max-height: 70px; /* Adjust logo size */
+    width: auto;
+}
+
+/* Upload Section */
+.upload-section {
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+}
+
+.upload-section h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #ffcc00;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Styling for form elements */
+form {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: inline-block;
+    text-align: left;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+label {
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+input[type="file"] {
+    padding: 10px;
+    font-size: 1.1em;
+    border-radius: 20px;
+    border: 2px solid #fff;
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 1.2em;
+    border-radius: 50px;
+    background-color: #ffcc00;
+    border: none;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: #e6b800;
+    transform: scale(1.05);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    .upload-section h2 {
+        font-size: 1.5em;
+    }
+
+    form {
+        width: 90%;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+.container2 {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.8); /* Fond semi-transparent */
+    padding: 30px;
+    border-radius: 20px; /* Bordures arrondies */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 50px;
+}
+.result-section {
+    text-align: center;
+}
+.result-section h2{
+    color: #ffcc00;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    font-family: 'Roboto Slab', serif;
+}
+.image-container img {
+    width: 100px; /* Largeur de l'image */
+    height: 100px; /* Hauteur de l'image */
+    border-radius: 50%; /* Crée un cercle autour de l'image */
+    border: 5px solid #ffffff; /* Bordure circulaire (couleur personnalisable) */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Ombre pour donner de la profondeur */
+    object-fit: cover;  /*Ajuste l'image pour remplir le cercle sans déformation */
+    display: block; /* Centrer en ajoutant margin: 0 auto dans le conteneur */
+    margin: 5px auto; /* Centrer horizontalement l'image */
+}
