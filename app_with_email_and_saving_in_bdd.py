@@ -221,7 +221,7 @@ def generate_frames_from_camera():
 def send_email(subject, body, to_email):
     """Send an email notification."""
     from_email = 'moussalasfar2000@gmail.com'  # Replace with your email
-    from_password = 'lkzh zfmm tjfz jxzc'  # Replace with your email password or app-specific password
+    from_password = ''  # Replace with your email password or app-specific password
 
     msg = MIMEMultipart()
     msg['From'] = from_email
